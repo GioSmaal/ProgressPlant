@@ -22,12 +22,21 @@
 
 .stem2 {
   width: 45px;
-  height: 300px;
+  height: 0px;
   background-color: #7FED0C;
   position: absolute;
   border-radius: 64% 36% 52% 48% / 61% 24% 76% 39% ;
   left: -30px;
   top: 130px;
+
+  animation: 2.5s forwards;
+  animation-name: grow;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes grow {
+  100% { height: 300px; };
 }
 
 .buttonStem {
